@@ -1,0 +1,21 @@
+.header {
+    border-bottom: solid 1px white;
+    padding: 20px;
+}
+
+.playlist {
+    background-color: black;
+    text-align: left;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.song {
+    padding: 20px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.song:hover {
+    background-color: rgb(141, 49, 184);
+}
