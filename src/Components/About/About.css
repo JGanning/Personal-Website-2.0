@@ -1,3 +1,15 @@
 .about {
     padding: 15px;
 }
+
+.about img {
+	width: 265px;
+	height:200px;
+}
+
+.about img {
+    border: solid white;
+    border-radius: 50%;
+	width: 265px;
+	height: 200px;
+}

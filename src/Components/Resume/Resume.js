@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Resume.css";
 import { UNDER_CONSTRUCTION } from "../../Constants/Generic_Constants";
 
 export class Resume extends Component {
@@ -9,7 +10,7 @@ export class Resume extends Component {
 
   render() {
     return (
-      <div>
+      <div className="resume">
         <h2>Resume</h2>
         <h4>{UNDER_CONSTRUCTION}</h4>
         <p></p>

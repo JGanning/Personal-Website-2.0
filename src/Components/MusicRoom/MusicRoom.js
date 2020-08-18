@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MusicRoom.css";
 import { UNDER_CONSTRUCTION } from "../../Constants/Generic_Constants";
 
 export class MusicRoom extends Component {
@@ -9,7 +10,7 @@ export class MusicRoom extends Component {
 
   render() {
     return (
-      <div>
+      <div className="music-room">
         <h2>The Music Room</h2>
         <h4>{UNDER_CONSTRUCTION}</h4>
       </div>
