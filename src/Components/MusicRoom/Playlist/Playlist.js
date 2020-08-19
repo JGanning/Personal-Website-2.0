@@ -1,33 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Playlist.css";
 
-export class Playlist extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className="playlist">
-        <h2 className="header no-margin">The Playlist</h2>
-        {this.props.musicList &&
-          this.props.musicList.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="song"
-                onClick={() => this.props.selectSong(item)}
-              >
-                <div>{item.title}</div>
-                <div>{item.artist}</div>
-                <div>{item.time}</div>
-              </div>
-            );
-          })}
-      </div>
-    );
-  }
-}
+export const Playlist = (props) => {
+  return (
+    <div className="playlist">
+      <h2 className="playlist-header no-margin">The Playlist</h2>
+      {props.musicList &&
+        props.musicList.map((item, index) => {
+          let active;
+          if (props.currentSong.id === item.id) {
+            active = "active";
+          } else {
+            active = "";
+          }
+          return (
+            <div
+              key={index}
+              className={active + " song"}
+              onClick={() => props.selectSong(item)}
+            >
+              <div>{item.title}</div>
+              <div>{item.artist}</div>
+              <div>{item.time}</div>
+            </div>
+          );
+        })}
+    </div>
+  );
+};
 
 export default Playlist;

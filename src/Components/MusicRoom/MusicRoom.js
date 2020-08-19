@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./MusicRoom.css";
 import Player from "./Player/Player";
 import Playlist from "./Playlist/Playlist";
-import _ from "underscore";
+// import _ from "underscore";
 
 export class MusicRoom extends Component {
   constructor(props) {
@@ -57,57 +57,12 @@ export class MusicRoom extends Component {
     };
   }
 
-  // playSong = () => {
-  //   let play = !this.state.play;
-  //   let song = this.state.song;
-  //   console.log(!_.isEmpty(song));
-  //   console.log(song);
-  //   if (!_.isEmpty(song)) {
-  //     if (play) {
-  //       console.log("Song Playing " + this.state.song.title);
-  //     } else {
-  //       console.log("Song Stopped");
-  //     }
-  //   } else {
-  //     let musicList = [...this.state.musicList];
-  //     song = musicList[0];
-  //   }
-  //   this.setState({
-  //     play,
-  //     song,
-  //   });
-  // };
-
-  // prevSong = () => {
-  //   let song = this.state.song;
-  //   let musicList = [...this.state.musicList];
-  //   let index = musicList.findIndex((current) => current === song);
-  //   if (index === -1 || index === 0) {
-  //     song = musicList[musicList.length - 1];
-  //   } else {
-  //     song = musicList[index - 1];
-  //   }
-  //   console.log("Previous Song " + song.title);
-  //   this.setState({
-  //     song,
-  //   });
-  // };
-
-  // nextSong = () => {
-  //   let song = this.state.song;
-  //   let musicList = [...this.state.musicList];
-  //   let index = musicList.findIndex((current) => current === song);
-  //   if (index === musicList.length - 1) {
-  //     song = musicList[0];
-  //   } else {
-  //     song = musicList[index + 1];
-  //   }
-
-  //   console.log("Next Song " + song.title);
-  //   this.setState({
-  //     song,
-  //   });
-  // };
+  returnSongToParent = (props) => {
+    let song = props;
+    this.setState({
+      song
+    })
+  }
 
   selectSong = (song) => {
     let play = !this.state.play;
@@ -121,8 +76,8 @@ export class MusicRoom extends Component {
   render() {
     return (
       <div className="music-room">
-        <div className="row">
-          <div className="col-lg-9">
+        <div className="row no-margin">
+          <div className="col-lg-9 no-padding">
             <Player
               musicList={this.state.musicList}
               prevSong={this.prevSong}
@@ -130,12 +85,14 @@ export class MusicRoom extends Component {
               nextSong={this.nextSong}
               currentSong={this.state.song}
               play={this.state.play}
+              returnSongToParent={this.returnSongToParent}
             />
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 no-padding">
             <Playlist
               selectSong={this.selectSong}
               musicList={this.state.musicList}
+              currentSong={this.state.song}
             />
           </div>
         </div>

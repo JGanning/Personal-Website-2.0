@@ -1,0 +1,23 @@
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+
+//Components
+import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
+import MusicRoom from "./Components/MusicRoom/MusicRoom";
+import Projects from "./Components/Projects/Projects";
+import Resume from "./Components/Resume/Resume";
+import Skills from "./Components/Skills/Skills";
+
+const Routes = () => (
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/music-room" component={MusicRoom} />
+    <Route path="/projects" component={Projects} />
+    <Route path="/resume" component={Resume} />
+    <Route path="/skills" component={Skills} />
+  </Switch>
+);
+
+export default Routes;

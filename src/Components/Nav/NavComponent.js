@@ -12,27 +12,53 @@ export class NavComponent extends Component {
     return (
       <div className="sidebar">
         <ul>
-          <NavLink to="/home" className="list-padding">
+          <NavLink
+            exact
+            to="/"
+            activeClassName="sidebar__Link--active"
+            className="sidebar__Link list-padding"
+          >
             <li>Home</li>
           </NavLink>
 
-          <NavLink to="/about" className="list-padding">
+          <NavLink
+            exact
+            to="/about"
+            className="sidebar__Link list-padding"
+            activeClassName="sidebar__Link--active"
+          >
             <li>About</li>
           </NavLink>
 
-          <NavLink to="/projects" className="list-padding">
+          <NavLink
+            to="/projects"
+            className="sidebar__Link list-padding"
+            activeClassName="sidebar__Link--active"
+          >
             <li> Projects</li>
           </NavLink>
 
-          <NavLink to="/skills" className="list-padding">
+          <NavLink
+            to="/skills"
+            className="sidebar__Link list-padding"
+            activeClassName="sidebar__Link--active"
+          >
             <li> Skills</li>
           </NavLink>
 
-          <NavLink to="/resume" className="list-padding">
+          <NavLink
+            to="/resume"
+            className="sidebar__Link list-padding"
+            activeClassName="sidebar__Link--active"
+          >
             <li> Resume</li>
           </NavLink>
 
-          <NavLink to="/music-room" className="list-padding">
+          <NavLink
+            to="/music-room"
+            className="sidebar__Link list-padding"
+            activeClassName="sidebar__Link--active"
+          >
             <li> Music Room</li>
           </NavLink>
         </ul>

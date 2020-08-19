@@ -1,16 +1,10 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, BrowserRouter } from "react-router-dom";
 
 //Components
 import NavComponent from "./Components/Nav/NavComponent";
-import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-import MusicRoom from "./Components/MusicRoom/MusicRoom";
-import Projects from "./Components/Projects/Projects";
-import Resume from "./Components/Resume/Resume";
-import Skills from "./Components/Skills/Skills";
+import Routes from "./routes";
 
 //Styles
 import { bootstrap } from "bootstrap";
@@ -27,12 +21,7 @@ function App() {
             </div>
 
             <div className="main col-lg-10 no-padding">
-              <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/music-room" component={MusicRoom} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/skills" component={Skills} />
+              <Routes />
             </div>
           </div>
         </div>

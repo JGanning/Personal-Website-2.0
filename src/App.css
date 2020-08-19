@@ -16,3 +16,7 @@
   color: white;
   height: 100vh;
 }
+
+.pr-0 {
+  padding-right: 0px;
+}

@@ -22,8 +22,6 @@ export class Player extends Component {
   playSong = () => {
     let play = !this.state.play;
     let song = this.state.song;
-    console.log(!_.isEmpty(song));
-    console.log(song);
     if (!_.isEmpty(song)) {
       if (play) {
         console.log("Song Playing " + this.state.song.title);
@@ -38,6 +36,7 @@ export class Player extends Component {
       play,
       song,
     });
+    this.props.returnSongToParent(song);
   };
 
   prevSong = () => {
@@ -53,6 +52,7 @@ export class Player extends Component {
     this.setState({
       song,
     });
+    this.props.returnSongToParent(song);
   };
 
   nextSong = () => {
@@ -69,23 +69,24 @@ export class Player extends Component {
     this.setState({
       song,
     });
+    this.props.returnSongToParent(song);
   };
 
   render() {
     let song = this.state.song;
-    console.log(this.state.song);
+    
     return (
-      <div className="player">
-        <h2>The Music Player</h2>
+      <div className="player col-lg-12 no-padding">
+        <h2 className="player-header no-margin">The Music Player</h2>
         <h4>{song && song.title ? "Now Playing: " + song.title : ""}</h4>
-        <div id="buttons">
-          <button id="pre" onClick={this.prevSong}>
+        <div className="buttons" style={{justifyContent: 'space-between'}}>
+          <button className="button btn btn-primary" onClick={this.prevSong}>
             Previous
           </button>
-          <button id="play" onClick={this.playSong}>
-            {this.props.play ? "Pause" : "Play"}
+          <button className="button btn btn-primary" onClick={this.playSong}>
+            {this.state.play ? "Pause" : "Play"}
           </button>
-          <button id="next" onClick={this.nextSong}>
+          <button className="button btn btn-primary" onClick={this.nextSong}>
             Next
           </button>
         </div>

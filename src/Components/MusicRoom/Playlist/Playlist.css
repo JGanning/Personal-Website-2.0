@@ -1,4 +1,4 @@
-.header {
+.playlist-header {
     border-bottom: solid 1px white;
     padding: 20px;
 }
@@ -8,6 +8,7 @@
     text-align: left;
     height: 100vh;
     overflow-y: auto;
+    border-left: 1px solid white;
 }
 
 .song {
@@ -17,5 +18,15 @@
 }
 
 .song:hover {
+    background-color: rgb(141, 49, 184);
+}
+
+.song {
+    padding: 20px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.active {
     background-color: rgb(141, 49, 184);
 }

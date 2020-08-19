@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0);
     color: white;
     z-index: 1;
+    border-right: 1px solid white;
     /* margin: 0;
     
     border: 0;
@@ -30,6 +31,8 @@
 }
 
 .sidebar li:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     background-color: rgb(141, 49, 184);
 }
 
@@ -42,3 +45,9 @@
     text-decoration: none;
     color: white;
 }
+
+.sidebar__Link--active li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: rgb(141, 49, 184);
+  }
