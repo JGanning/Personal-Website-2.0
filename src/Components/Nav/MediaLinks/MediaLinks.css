@@ -1,0 +1,14 @@
+.media-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+
+.media-icon {
+    font-size: 50px;
+}
+
+.media-icon:hover {
+    color: rgb(141, 49, 184) !important;
+}
