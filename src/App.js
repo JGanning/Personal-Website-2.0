@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Route, BrowserRouter as Router, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 //Components
 import NavComponent from "./Components/Nav/NavComponent";
 import Routes from "./routes";
 
 //Styles
-import { bootstrap } from "bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

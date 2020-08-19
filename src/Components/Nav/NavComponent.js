@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink, withRouter, Link } from "react-router-dom";
 import "./NavComponent.css";
 
 import Icon from "./Icon/Icon";
