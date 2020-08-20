@@ -1,3 +1,8 @@
 /* .music-room {
     padding: 15px;
 } */
+
+.btn-primary {
+    background-color: rgb(82, 158, 129) !important;
+    border-color: transparent !important;
+}
