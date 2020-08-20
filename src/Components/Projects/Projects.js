@@ -10,7 +10,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div className="projects">
+      <div className="projects col-lg-9">
         <h2>My Projects</h2>
         <h4>{UNDER_CONSTRUCTION}</h4>
       </div>

@@ -1,3 +1,15 @@
 .skills {
     padding: 15px;
 }
+
+.icons {
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+.icons i {
+    font-size: 100px;
+    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

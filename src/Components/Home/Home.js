@@ -9,7 +9,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div className="home">
+      <div className="home col-lg-9">
         <h2>Welcome to my Website</h2>
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Resume.css";
-import { UNDER_CONSTRUCTION } from "../../Constants/Generic_Constants";
+import "../../"
 
 export class Resume extends Component {
   constructor(props) {
@@ -10,10 +10,15 @@ export class Resume extends Component {
 
   render() {
     return (
-      <div className="resume">
+      <div className="resume col-lg-9">
         <h2>Resume</h2>
-        <h4>{UNDER_CONSTRUCTION}</h4>
-        <p></p>
+        <div className="download">
+          <a href="../../assets/img/josephganning_resume.pdf" download>Download Resume</a>
+        </div>
+        
+        <div className="resume-container col-lg-12">
+          <div className="resume-body"></div>
+        </div>
       </div>
     );
   }
