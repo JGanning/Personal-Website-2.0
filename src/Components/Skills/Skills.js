@@ -9,8 +9,8 @@ export class Skills extends Component {
 
   render() {
     return (
-      <div className="skills col-lg-9">
-        <h2>Skills</h2>
+      <div className="skills col-lg-9 no-padding">
+        <h2 className="skills-header">Skills</h2>
         <div className="devicons">
           <div className="icons frameworks">
             <i class="devicon-angularjs-plain"></i>

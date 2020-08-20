@@ -1,3 +1,11 @@
 .projects {
     padding: 15px;
+    background-color: #eaeaea !important;
+	height: 100%;
+}
+
+.projects-header {
+    padding: 26px;
+    background-color: #33363b;
+    color: #eaeaea;
 }

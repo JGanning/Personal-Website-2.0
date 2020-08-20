@@ -1,5 +1,14 @@
 .about {
-    padding: 15px;
+	padding: 15px;
+	color: #33363b;
+    background-color: #eaeaea !important;
+	height: 100%;
+}
+
+.about-header {
+    padding: 26px;
+    background-color: #33363b;
+    color: #eaeaea;
 }
 
 .about img {
@@ -8,7 +17,7 @@
 }
 
 .about img {
-    border: solid white;
+    border: solid #368cbf;
     border-radius: 50%;
 	width: 265px;
 	height: 200px;

@@ -1,11 +1,10 @@
 .sidebar {
-    background: black;
     height: 100vh;
     margin: 0px;
-    background-color: rgba(0, 0, 0);
-    color: white;
+    background-color: #33363b;
+    color: #eaeaea;
     z-index: 1;
-    border-right: 1px solid white;
+    /* border-right: 1px solid #eaeaea; */
     /* margin: 0;
     
     border: 0;
@@ -31,23 +30,23 @@
 }
 
 .tab:hover {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    background-color: rgb(141, 49, 184);
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #368cbf ;
 }
 
 .sidebar a {
     text-decoration: none;
-    color: white;
+    color: #eaeaea;
 }
 
 .sidebar a:hover {
     text-decoration: none;
-    color: white;
+    color: #eaeaea;
 }
 
 .sidebar__Link--active li {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    background-color: rgb(141, 49, 184);
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #368cbf;
 }

@@ -1,5 +1,23 @@
 .skills {
     padding: 15px;
+    color: #33363b;
+    background-color: #eaeaea !important;
+    height: 100%;
+    position: relative;
+}
+
+.skills-header {
+    padding: 26px;
+    background-color: #33363b;
+    color: #eaeaea;
+}
+
+.devicons {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .icons {

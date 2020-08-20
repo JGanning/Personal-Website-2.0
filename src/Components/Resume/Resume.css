@@ -1,6 +1,13 @@
 .resume {
     padding: 15px;
-    overflow: auto !important;
+    background-color: #eaeaea !important;
+	height: 100%;
+}
+
+.resume-header {
+    padding: 26px;
+    background-color: #33363b;
+    color: #eaeaea;
 }
 
 .download {
@@ -8,13 +15,13 @@
 }
 
 .download a {
-    color: white;
+    color: #368cbf;
     text-decoration: none;
     font-size: 20px;
 }
 
 .download a:hover {
-    color: rgb(141, 49, 184);
+    color: #7ebc59;
     text-decoration: none;
 }
 
@@ -24,7 +31,8 @@
 
 .resume-body {
     background-color: rgba(255, 255, 255, 0.863);
-    height: 100vh;
+    height: 90vh;
     width: 77%;
     display: inline-block;
+    overflow: auto !important;
 }

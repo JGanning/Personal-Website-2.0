@@ -10,8 +10,8 @@ export class Resume extends Component {
 
   render() {
     return (
-      <div className="resume col-lg-9">
-        <h2>Resume</h2>
+      <div className="resume col-lg-9 no-padding">
+        <h2 className="resume-header">Resume</h2>
         <div className="download">
           <a href="../../assets/img/josephganning_resume.pdf" download>Download Resume</a>
         </div>
