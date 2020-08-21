@@ -54,6 +54,13 @@ export const Tabs = () => {
       >
         <li className="tab"> Music Room</li>
       </NavLink>
+      <NavLink
+        to="/test-room"
+        className="sidebar__Link list-padding"
+        activeClassName="sidebar__Link--active"
+      >
+        <li className="tab">Test Room</li>
+      </NavLink>
     </ul>
   );
 };

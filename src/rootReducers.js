@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import musicRoomReducer from "./Components/MusicRoom/MusicRoom_State_Mgmt/musicRoom-reducers";
+import playerReducer from "./Components/MusicLounge/MusicLounge_State_MGMT/playerReducer";
 
 const combineReducer = combineReducers({
-    musicRoomReducer
+    playerReducer
 });
 
 export default combineReducer;
