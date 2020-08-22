@@ -1,27 +1,37 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import josephganning_resume from "../../assets/img/josephganning_resume.pdf";
 import "./Resume.css";
-import "../../"
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export class Resume extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
   }
 
-  render() {
-    return (
-      <div className="resume col-lg-9 no-padding">
-        <h2 className="resume-header">Resume</h2>
-        <div className="download">
-          <a href="../../assets/img/josephganning_resume.pdf" download>Download Resume</a>
-        </div>
-        
-        <div className="resume-container col-lg-12">
-          <div className="resume-body"></div>
-        </div>
+  return (
+    <div className="resume col-lg-9 no-padding">
+      <h2 className="resume-header no-margin">Resume</h2>
+      <div className="download">
+        <a href="../../assets/img/josephganning_resume.pdf" download>
+          Download Resume
+        </a>
       </div>
-    );
-  }
+
+      <div className="">
+        <Document
+          file={josephganning_resume}
+          onDocumentLoadSuccess={onDocumentLoadSuccess}
+          className="resume-pdf"
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+      </div>
+    </div>
+  );
 }
 
 export default Resume;

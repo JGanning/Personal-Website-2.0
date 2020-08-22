@@ -196,3 +196,48 @@
   border-bottom: 1px solid #eaeaea;
   background-color: #368cbf;
 }
+
+.react-pdf__Page__canvas {
+  /* border: 1px solid black; */
+  display: inline !important;
+}
+
+.resume {
+  padding: 15px;
+  background-color: #eaeaea !important;
+height: 100%;
+}
+
+.resume-header {
+  padding: 26px;
+  background-color: #33363b;
+  color: #eaeaea;
+}
+
+.download {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.download a {
+  color: #368cbf;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.download a:hover {
+  color: #7ebc59;
+  text-decoration: none;
+}
+
+.resume-container {
+  text-align: center;
+}
+
+.resume-body {
+  background-color: rgba(255, 255, 255, 0.863);
+  height: 90vh;
+  width: 77%;
+  display: inline-block;
+  overflow: auto !important;
+}
