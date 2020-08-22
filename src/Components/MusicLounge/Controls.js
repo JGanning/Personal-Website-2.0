@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import playerContext from "./MusicLounge_State_MGMT/playerContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faVolumeDown,
+  faPlay,
+  faPause,
+  faStepBackward,
+  faStepForward,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Controls() {
   // global state
@@ -62,7 +70,7 @@ function Controls() {
       />
 
       <div className="volume">
-        <span>Volume</span>
+        <FontAwesomeIcon icon={faVolumeDown} />
         <input
           value={Math.round(statevolume * 100)}
           type="range"
@@ -73,7 +81,7 @@ function Controls() {
       </div>
       <div className="music-controls">
         <button onClick={prevSong} className="button btn btn-primary">
-          Previous
+          <FontAwesomeIcon icon={faStepBackward} />
         </button>
         <button
           className="button btn btn-primary"
@@ -82,14 +90,18 @@ function Controls() {
             toggleAudio();
           }}
         >
-          {playing ? "Pause" : "Play"}
+          {playing ? (
+            <FontAwesomeIcon icon={faPause} />
+          ) : (
+            <FontAwesomeIcon icon={faPlay} />
+          )}
         </button>
         <button onClick={nextSong} className="button btn btn-primary">
-          Next
+          <FontAwesomeIcon icon={faStepForward} />
         </button>
       </div>
       <div className="progressbar">
-        <span className="current-time">{fmtMSS(currentTime)}</span>
+        <span className="time current-time">{fmtMSS(currentTime)}</span>
         <input
           onChange={handleProgress}
           value={dur ? (currentTime * 100) / dur : 0}
@@ -97,7 +109,7 @@ function Controls() {
           name="progresBar"
           id="prgbar"
         />
-        <span className="total-time">{fmtMSS(dur)}</span>
+        <span className="time total-time">{fmtMSS(dur)}</span>
       </div>
     </div>
   );

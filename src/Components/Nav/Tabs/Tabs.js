@@ -48,7 +48,7 @@ export const Tabs = () => {
       </NavLink>
 
       <NavLink
-        to="/music-room"
+        to="/music-lounge"
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >

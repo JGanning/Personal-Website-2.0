@@ -13,26 +13,26 @@ export class Skills extends Component {
         <h2 className="skills-header">Skills</h2>
         <div className="devicons">
           <div className="icons frameworks">
-            <i class="devicon-angularjs-plain"></i>
-            <i class="devicon-react-original-wordmark"></i>
+            <i className="devicon-angularjs-plain"></i>
+            <i className="devicon-react-original-wordmark"></i>
           </div>
           <div className="icons front-end">
             <i className="devicon-javascript-plain"></i>
-            <i class="devicon-html5-plain-wordmark"></i>
-            <i class="devicon-css3-plain-wordmark"></i>
+            <i className="devicon-html5-plain-wordmark"></i>
+            <i className="devicon-css3-plain-wordmark"></i>
           </div>
           <div className="icons service">
-            <i class="devicon-java-plain-wordmark"></i>
-            <i class="devicon-nodejs-plain-wordmark"></i>
+            <i className="devicon-java-plain-wordmark"></i>
+            <i className="devicon-nodejs-plain-wordmark"></i>
           </div>
           <div className="icons database">
-            <i class="devicon-postgresql-plain-wordmark"></i>
-            <i class="devicon-oracle-original"></i>
-            <i class="devicon-mysql-plain-wordmark"></i>
+            <i className="devicon-postgresql-plain-wordmark"></i>
+            <i className="devicon-oracle-original"></i>
+            <i className="devicon-mysql-plain-wordmark"></i>
           </div>
           <div className="icons misc">
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-python-plain"></i>
+            <i className="devicon-git-plain"></i>
+            <i className="devicon-python-plain"></i>
           </div>
         </div>
       </div>

@@ -36,6 +36,7 @@
   padding: 26px;
   /* background-color: #33363b; */
   color: #33363b;
+  font-weight: bold;
 }
 
 .playlist-header {
@@ -92,7 +93,7 @@
 }
 
 .album {
-  border: 1px solid #33363b;
+  border: 2px solid #33363b;
   border-radius: 10px;
   margin: 0;
   position: absolute;
@@ -131,5 +132,67 @@
     background: #368cbf;
     box-shadow: -80px 0 0 80px #368cbf;
   }
+}
 
+.playlist .fa-margin {
+  margin-right: 8px;
+  color: #7ebc59
+}
+
+.time {
+  font-weight: bold;
+}
+
+.sidebar {
+  height: 100vh;
+  margin: 0px;
+  background-color: #33363b;
+  color: #eaeaea;
+  z-index: 1;
+  /* border-right: 1px solid #eaeaea; */
+  /* margin: 0;
+  
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  width: 18%;
+  height: 100%;
+  position: fixed;
+  
+  top: 0;
+  left: 0; */
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tab {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.tab:hover {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #368cbf ;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.sidebar__Link--active li {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #368cbf;
 }
