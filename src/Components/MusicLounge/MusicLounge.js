@@ -8,7 +8,6 @@ import Controls from "./Controls";
 import PlayerState from "./MusicLounge_State_MGMT/playerState";
 
 function MusicLounge() {
-  const [currentSong, setCurrentSong] = useState("");
 
   return (
     <PlayerState>
@@ -16,6 +15,7 @@ function MusicLounge() {
         <div className="top">
           <div className="row no-margin">
             <div className="left col-lg-9 no-padding">
+            <h2 className="home-header">The Music Lounge</h2>
               <Header />
               <Graphics />
               <Controls />

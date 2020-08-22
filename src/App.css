@@ -34,9 +34,8 @@
 
 .musicroom-header {
   padding: 26px;
-  background-color: #33363b;
-  color: #eaeaea;
-  border-bottom: solid 2px #eaeaea;
+  /* background-color: #33363b; */
+  color: #33363b;
 }
 
 .playlist-header {
@@ -80,4 +79,57 @@
 
 .music-controls .button {
   margin: 10px;
+  background-color: #368cbf;
+  color: #eaeaea;
+  border-color: transparent;
+}
+
+.music-controls .button:hover {
+  margin: 10px;
+  background-color: #368cbf;
+  color: #eaeaea;
+  border-color: transparent;
+}
+
+.album {
+  border: 1px solid #33363b;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    /* width: 80px; */
+    -webkit-appearance: none;
+    background-color: #33363b;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    /* -webkit-appearance: none; */
+    color: #7ebc59;
+    border-radius: 10px;
+    /* margin-top: -1px; */
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #368cbf;
+    box-shadow: -80px 0 0 80px #368cbf;
+  }
+
 }

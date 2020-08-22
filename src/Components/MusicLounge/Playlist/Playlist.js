@@ -21,7 +21,7 @@ function Playlist() {
 
               </div>
               <i className="fas fa-music"></i>
-              <span className="">{song[0]}</span>
+              <span className="">{song.title}</span>
             </li>
           ))}
         </ul>

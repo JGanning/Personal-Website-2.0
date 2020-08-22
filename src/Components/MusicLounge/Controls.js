@@ -50,11 +50,11 @@ function Controls() {
   }, [currentSong]);
 
   return (
-    <div className="controls">
+    <div className="controls anchor">
       <audio
         ref={audio}
         type="audio/mpeg"
-        src={require("../../" + songs[currentSong][1])}
+        src={require("../../" + songs[currentSong].song)}
         onCanPlay={(e) => setDur(e.target.duration)}
         onTimeUpdate={(e) => setCurrentTime(e.target.currentTime)}
         onEnded={handleEnd}

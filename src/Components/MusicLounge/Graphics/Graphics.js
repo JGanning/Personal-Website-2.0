@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import playerContext from "../MusicLounge_State_MGMT/playerContext";
 
 export const Graphics = (props) => {
+  const { currentSong, songs } = useContext(playerContext);
+
   return (
     <div className="graphics">
-      <img src="https://source.unsplash.com/random/500x500?sig=1" alt="album" />
+      <img
+        src={require("../../../assets/img/" + songs[currentSong].album)}
+        alt="album"
+        width="80%"
+        height="500px"
+        className="album"
+      />
     </div>
   );
 };
