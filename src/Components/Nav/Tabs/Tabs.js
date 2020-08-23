@@ -16,11 +16,11 @@ export const Tabs = () => {
 
       <NavLink
         exact
-        to="/about"
+        to="/bio"
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab">About</li>
+        <li className="tab">Bio</li>
       </NavLink>
 
       <NavLink
@@ -28,7 +28,7 @@ export const Tabs = () => {
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab"> Projects</li>
+        <li className="tab">Projects</li>
       </NavLink>
 
       <NavLink
@@ -36,7 +36,7 @@ export const Tabs = () => {
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab"> Skills</li>
+        <li className="tab">Skills</li>
       </NavLink>
 
       <NavLink
@@ -44,7 +44,7 @@ export const Tabs = () => {
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab"> Resume</li>
+        <li className="tab">Resume</li>
       </NavLink>
 
       <NavLink
@@ -52,7 +52,7 @@ export const Tabs = () => {
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab"> Music Room</li>
+        <li className="tab">Music Room</li>
       </NavLink>
     </ul>
   );

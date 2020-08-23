@@ -16,5 +16,11 @@ export const songsArr = [
       artist: "Pokemon",
       album: "Pallet - Pokemon.PNG",
       song: "assets/music/Pallet - Pokemon.mp3"
+    },
+    {
+      title: "Famous for Nothing - Dropkick Murphys",
+      artist: "Dropkick Murphys",
+      album: "Pallet - Pokemon.PNG",
+      song: "assets/music/Famous for Nothing - Dropkick Murphys.mp3"
     }
 ];

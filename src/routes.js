@@ -12,7 +12,7 @@ import Skills from "./Components/Skills/Skills";
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
+    <Route path="/bio" component={About} />
     <Route path="/music-lounge" component={MusicLounge} />
     <Route path="/projects" component={Projects} />
     <Route path="/resume" component={Resume} />
