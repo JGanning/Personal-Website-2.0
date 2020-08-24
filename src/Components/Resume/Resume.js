@@ -21,7 +21,7 @@ function Resume() {
         </a>
       </div>
 
-      <div className="">
+      <div className="doc-body">
         <Document
           file={josephganning_resume}
           onDocumentLoadSuccess={onDocumentLoadSuccess}

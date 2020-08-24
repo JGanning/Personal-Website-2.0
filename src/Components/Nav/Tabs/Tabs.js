@@ -52,7 +52,7 @@ export const Tabs = () => {
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
-        <li className="tab">Music Room</li>
+        <li className="tab">Music Lounge</li>
       </NavLink>
     </ul>
   );

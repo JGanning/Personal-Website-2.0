@@ -63,15 +63,15 @@ export class Skills extends Component {
   render() {
     return (
       <div className="skills col-lg-9 no-padding">
-        <h2 className="skills-header">Skills</h2>
+        <h2 className="skills-header no-margin">Skills</h2>
         <div className="skills-body">
           {this.state.skillObjArray.map((item, index) => {
             return (
-              <div className="row no-margin" key={index}>
-                <div className="col-lg-2 no-padding">
+              <div className="skill row no-margin" key={index}>
+                <div className="col-lg-3 no-padding">
                   <Devicons devicon={item.icon} />
                 </div>
-                <div className="col-lg-10 no-padding">
+                <div className="col-lg-9 no-padding">
                   <Descriptions text={item.text} />
                 </div>
               </div>
