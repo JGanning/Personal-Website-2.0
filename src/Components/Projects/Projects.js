@@ -5,7 +5,7 @@ import "./Projects.css";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectName from "./ProjectName/ProjectName";
 import * as projectActions from "./Project_State_MGMT/Project-ActionCreator";
-import axios from 'axios';
+import axios from "axios";
 
 export class Projects extends Component {
   constructor(props) {
@@ -68,14 +68,23 @@ export class Projects extends Component {
       <div className="projects col-lg-9 no-padding">
         <h2 className="projects-header no-margin">My Projects</h2>
         <div className="projects-body">
-          {this.props.getProjects && this.props.getProjects.map((item, index) => {
-            return (
-              <div key={index} className="project row no-margin">
-                <ProjectName name={item.name} />
-                <ProjectDescription description={item.description} />
-              </div>
-            );
-          })}
+          {this.props.getProjects && this.props.getProjects
+            ? this.props.getProjects.map((item, index) => {
+                return (
+                  <div key={index} className="project row no-margin">
+                    <ProjectName name={item.name} />
+                    <ProjectDescription projectContent="db-project-content" description={item.description} />
+                  </div>
+                );
+              })
+            : this.state.projectsArray.map((item, index) => {
+                return (
+                  <div key={index} className="project row no-margin">
+                    <ProjectName name={item.name} />
+                    <ProjectDescription projectContent="project-content" description={item.description} />
+                  </div>
+                );
+              })}
         </div>
       </div>
     );
