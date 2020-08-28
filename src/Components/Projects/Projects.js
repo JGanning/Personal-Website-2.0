@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
 import "./Projects.css";
-import ProjectDescription from './ProjectDescription/ProjectDescription';
-import ProjectName from './ProjectName/ProjectName';
+import ProjectDescription from "./ProjectDescription/ProjectDescription";
+import ProjectName from "./ProjectName/ProjectName";
+import * as projectActions from "./Project_State_MGMT/Project-ActionCreator";
+import axios from 'axios';
 
 export class Projects extends Component {
   constructor(props) {
@@ -54,12 +58,17 @@ export class Projects extends Component {
     };
   }
 
+  componentDidMount() {
+    this.props.actions.getProjects();
+  }
+
   render() {
+    console.log(this.props.getProjects);
     return (
       <div className="projects col-lg-9 no-padding">
         <h2 className="projects-header no-margin">My Projects</h2>
         <div className="projects-body">
-          {this.state.projectsArray.map((item, index) => {
+          {this.props.getProjects && this.props.getProjects.map((item, index) => {
             return (
               <div key={index} className="project row no-margin">
                 <ProjectName name={item.name} />
@@ -73,4 +82,16 @@ export class Projects extends Component {
   }
 }
 
-export default Projects;
+function mapStateToProps(state) {
+  return {
+    getProjects: state.projectReducer.getProjects,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(projectActions, dispatch),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Projects);

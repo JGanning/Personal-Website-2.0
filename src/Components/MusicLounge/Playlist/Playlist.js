@@ -18,7 +18,7 @@ function Playlist() {
           Playlist
         </h2>
       </div>
-      <div className="playlist">
+      <div className="songs">
         <ul className="song-list">
           {songsArr.map((song, i) => (
             <li

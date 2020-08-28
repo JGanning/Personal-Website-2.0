@@ -50,9 +50,14 @@
   background-color: #33363b;
   text-align: left;
   height: 100vh;
-  overflow-y: auto;
-  border-left: 1px solid #eaeaea;
+  
+  /* border-left: 1px solid #eaeaea */
   color: #eaeaea;
+}
+
+.songs {
+  overflow-y: auto;
+  height: 91%;
 }
 
 .song-list {
@@ -206,7 +211,7 @@
 
 .project {
   padding: 15px !important;
-  height: 20vh;
+  min-height: 20vh;
 }
 
 .project:nth-child(odd) {
@@ -224,6 +229,13 @@
 .project-description {
   font-size: 26px;
   text-align: left;
+  /* position: absolute; */
+  /* top: 50%;
+  transform: translate(0%, -50%);
+  min-height: 20vh; */
+}
+
+.project-content {
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%);
