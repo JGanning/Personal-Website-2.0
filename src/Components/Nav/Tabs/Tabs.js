@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
-import "./Tabs.css";
+// import "./Tabs.css";
 
 export const Tabs = () => {
   return (
@@ -53,6 +53,14 @@ export const Tabs = () => {
         activeClassName="sidebar__Link--active"
       >
         <li className="tab">Music Lounge</li>
+      </NavLink>
+
+      <NavLink
+        to="/experiments"
+        className="sidebar__Link list-padding"
+        activeClassName="sidebar__Link--active"
+      >
+        <li className="tab">Experiments</li>
       </NavLink>
     </ul>
   );

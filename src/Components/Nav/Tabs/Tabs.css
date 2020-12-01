@@ -30,8 +30,8 @@
 }
 
 .tab:hover {
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
+    /* border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea; */
     background-color: #368cbf ;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .sidebar__Link--active li {
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
+    /* border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea; */
     background-color: #368cbf;
 }

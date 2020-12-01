@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "private": true, 
+  "private": true,
   "proxy": "http://localhost:8084",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -13,10 +13,13 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+    "chart.js": "^2.9.4",
     "connected-react-router": "^6.8.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-chartjs-2": "^2.11.1",
     "react-devicon": "^0.1.9",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",

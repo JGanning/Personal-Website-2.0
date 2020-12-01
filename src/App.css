@@ -184,8 +184,8 @@
 }
 
 .tab:hover {
-  border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea;
+  /* border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea; */
   background-color: #368cbf ;
 }
 
@@ -333,4 +333,16 @@
   width: 77%;
   display: inline-block;
   overflow: auto !important;
+}
+
+.module {
+  padding: 15px;
+  background-color: #eaeaea !important;
+  height: 100%;
+}
+
+.module-header {
+  padding: 26px;
+  background-color: #33363b;
+  color: #eaeaea;
 }
