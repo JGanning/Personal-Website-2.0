@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "./About.css";
-import { UNDER_CONSTRUCTION } from "../../Constants/Generic_Constants";
+import * as Constants from "./About-Constants";
 // import * from "../../assets/img";
 
 export class About extends Component {
@@ -13,8 +12,12 @@ export class About extends Component {
     return (
       <div className="about col-lg-9 no-padding">
         <h2 className="about-header">About Me</h2>
-        <h4>{UNDER_CONSTRUCTION}</h4>
         <img src={require("../../assets/img/shrek.PNG")} alt="Profile Pic" />
+        <div className="about-desc col-lg-8 offset-lg-2">
+          <p>{Constants.p1}</p>
+          <p>{Constants.p2}</p>
+          <p>{Constants.p3}</p>
+        </div>
       </div>
     );
   }
