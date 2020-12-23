@@ -63,7 +63,7 @@ export class Skills extends Component {
   render() {
     return (
       <div className="skills col-lg-9 no-padding">
-        <h2 className="skills-header no-margin">Skills</h2>
+        <h2 className="header no-margin">Skills</h2>
         <div className="skills-body">
           {this.state.skillObjArray.map((item, index) => {
             return (

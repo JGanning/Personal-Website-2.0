@@ -66,7 +66,7 @@ export class Projects extends Component {
     console.log(this.props.getProjects);
     return (
       <div className="projects col-lg-9 no-padding">
-        <h2 className="projects-header no-margin">My Projects</h2>
+        <h2 className="header no-margin">My Projects</h2>
         <div className="projects-body">
           {this.props.getProjects && this.props.getProjects
             ? this.props.getProjects.map((item, index) => {

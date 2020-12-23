@@ -14,7 +14,7 @@ function Resume() {
 
   return (
     <div className="resume col-lg-9 no-padding">
-      <h2 className="resume-header no-margin">Resume</h2>
+      <h2 className="header no-margin">Resume</h2>
       <div className="download">
         <a href="../../assets/img/josephganning_resume.pdf" download>
           Download Resume

@@ -16,7 +16,7 @@ export class Experiments extends Component {
   render() {
     return (
       <div className="module col-lg-9 no-padding">
-        <h2 className="module-header">Experiments</h2>
+        <h2 className="header">Experiments</h2>
         <div className="experiments-body">
           <ExperimentsDescription />
           <Hierarchy />

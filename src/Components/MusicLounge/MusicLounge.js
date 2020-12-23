@@ -14,7 +14,7 @@ function MusicLounge() {
         <div className="top">
           <div className="row no-margin">
             <div className="left col-lg-9 no-padding">
-              <h2 className="home-header no-margin">The Music Lounge</h2>
+              <h2 className="header no-margin">The Music Lounge</h2>
               <Graphics />
               <Header />
               <div className="controls-container">

@@ -11,7 +11,7 @@ export class About extends Component {
   render() {
     return (
       <div className="about col-lg-9 no-padding">
-        <h2 className="about-header">About Me</h2>
+        <h2 className="header">About Me</h2>
         <img src={require("../../assets/img/shrek.PNG")} alt="Profile Pic" />
         <div className="about-desc col-lg-8 offset-lg-2">
           <p>{Constants.p1}</p>
