@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 
+@keyframes fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%}
+}
 .App {
   text-align: center;
-  overflow: hidden;
   background-color: #33363b;
   overflow: hidden;
   font-family: 'Work Sans', 'serif';
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 .no-margin {
@@ -30,6 +35,36 @@
   background-color: #eaeaea;
 }
 
+.about {
+	padding: 15px;
+	color: #33363b;
+  background-color: #eaeaea !important;
+	height: 100%;
+}
+
+.about-header {
+  padding: 26px;
+  background-color: #33363b;
+  color: #eaeaea;
+}
+
+.about img {
+  border: solid #368cbf;
+  border-radius: 50%;
+	width: 265px;
+  height: 200px;
+  margin: 30px;
+}
+
+.about-desc {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.music-lounge {
+  background-color: #33363b;
+}
+
 .volBar {
   padding: 0;
   margin: 0;
@@ -38,10 +73,11 @@
 }
 
 .musicroom-header {
-  padding: 26px;
-  /* background-color: #33363b; */
-  color: #33363b;
+  padding: 30px;
+  background-color: #33363b;
+  color: #eaeaea;
   font-weight: bold;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .playlist-header {
@@ -103,13 +139,14 @@
 }
 
 .album {
-  border: 2px solid #33363b;
-  border-radius: 10px;
+  border-bottom: 1px solid #33363b;
+  width: 100%;
+  /* border-radius: 10px;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 /*Chrome*/
@@ -118,7 +155,7 @@
     overflow: hidden;
     /* width: 80px; */
     -webkit-appearance: none;
-    background-color: #33363b;
+    /* background-color: #33363b; */
     margin: 10px;
     border-radius: 10px;
   }
@@ -184,8 +221,8 @@
 }
 
 .tab:hover {
-  border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea;
+  /* border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea; */
   background-color: #368cbf ;
 }
 
@@ -203,6 +240,32 @@
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
   background-color: #368cbf;
+}
+
+
+
+.anchor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.controls-container {
+  height: 100%;
+  /* position: relative; */
+}
+
+.controls {
+  padding: 30px;
+  bottom: 0;
+  width: 100%;
+  /* padding-bottom: 40px; */
+  background-color: #33363b;
+  color: #eaeaea;
+  /* position: relative; */
+  /* top: 50%; */
+  /* transform: translate(0%, 25%); */
 }
 
 .projects-body {
@@ -333,4 +396,16 @@
   width: 77%;
   display: inline-block;
   overflow: auto !important;
+}
+
+.module {
+  padding: 15px;
+  background-color: #eaeaea !important;
+  height: 100%;
+}
+
+.module-header {
+  padding: 26px;
+  background-color: #33363b;
+  color: #eaeaea;
 }

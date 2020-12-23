@@ -58,7 +58,7 @@ function Controls() {
   }, [currentSong]);
 
   return (
-    <div className="controls anchor">
+    <div className="controls">
       <audio
         ref={audio}
         type="audio/mpeg"

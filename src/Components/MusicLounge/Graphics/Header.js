@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div>
       {songs && songs[currentSong] ? (
-        <h2 className="musicroom-header">
+        <h2 className="musicroom-header no-margin">
           Now Playing: {songs[currentSong].title}
         </h2>
       ) : (
