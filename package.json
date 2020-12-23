@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "private": true, 
+  "private": true,
   "proxy": "http://localhost:8084",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
