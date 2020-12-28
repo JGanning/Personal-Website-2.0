@@ -13,7 +13,7 @@ export class About extends Component {
       <div className="about col-lg-9 no-padding">
         <h2 className="header">About Me</h2>
         <img src={require("../../assets/img/shrek.PNG")} alt="Profile Pic" />
-        <div className="about-desc col-lg-8 offset-lg-2">
+        <div className="about-desc">
           <p>{Constants.p1}</p>
           <p>{Constants.p2}</p>
           <p>{Constants.p3}</p>

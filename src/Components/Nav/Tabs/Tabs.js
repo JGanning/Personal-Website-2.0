@@ -2,9 +2,11 @@ import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
 // import "./Tabs.css";
 
-export const Tabs = () => {
+export const Tabs = (props) => {
+  console.log(props);
   return (
-    <ul>
+    <ul className={`${props.collapsed}`}>
+      {/* <img className="logo" src={require("../../../assets/img/Logo.png")} alt="Profile Pic" /> */}
       <NavLink
         exact
         to="/"

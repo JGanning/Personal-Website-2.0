@@ -5,6 +5,21 @@
   100% {opacity: 100%}
 }
 
+@keyframes hover {
+  0% { background-color: #33363b;}
+  100% { background-color: rgb(54, 140, 191, 0.5);}
+}
+
+@keyframes expand {
+  0% {}
+  100% {}
+}
+
+@keyframes collapse {
+  0% {}
+  100% {}
+}
+
 .App {
   text-align: center;
   background-color: #33363b;
@@ -20,6 +35,10 @@
 
 .no-padding {
   padding: 0px !important;
+}
+
+.black-bg {
+  background-color: #33363b;
 }
 
 .main {
@@ -189,6 +208,18 @@
   font-weight: bold;
 }
 
+.icon img {
+  width: 50px;
+  height: 50px;
+  border: solid white;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.icon img:hover {
+  border: solid #368cbf;
+}
+
 @media (min-width: 769px) {
   .sidebar {
     height: 100vh;
@@ -196,6 +227,18 @@
     background-color: #33363b;
     color: #eaeaea;
     z-index: 1;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  .expand {
+    display: none;
   }
 
   .sidebar ul {
@@ -214,7 +257,9 @@
   .tab:hover {
     /* border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea; */
-    background-color: #368cbf ;
+    animation-name: hover;
+    animation-duration: .2s;
+    background-color: rgb(54, 140, 191, 0.5);
   }
 
   .anchor {
@@ -239,13 +284,57 @@
     z-index: 1;
   }
 
-  .sidebar .icon {
+  /* .sidebar .logo {
     display: none;
+  } */
+
+  .sidebar .expand {
+    background-color: #eaeaea;
+    position: absolute;
+    left: 1%;
+  }
+
+  .expanded {
+    height: 100%;
+    width: 35%;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .collapsed {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  .icon img:hover {
+    border: solid #368cbf;
   }
 
   .sidebar ul {
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
+    position: fixed;
+    height: 100%;
+    background-color: #33363b;
+    z-index: 2;
     list-style: none;
     text-align: left;
     margin: 0px;
@@ -268,6 +357,7 @@
 .tab {
   padding: 10px;
   font-size: 20px;
+  white-space: nowrap;
 }
 
 .sidebar a {

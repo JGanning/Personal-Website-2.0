@@ -56,14 +56,18 @@ export class Skills extends Component {
           text: "Built chat bots for charity events",
           icon: <i className="devicon-python-plain"></i>,
         },
-      ]
+      ],
     };
   }
 
   render() {
     return (
-      <div className="skills col-lg-9 no-padding">
-        <h2 className="header no-margin">Skills</h2>
+      <div className="skills col-lg-12 no-padding">
+        <div className="col-lg-12 no-padding black-bg">
+          <div className="col-lg-9 no-padding">
+            <h2 className="header no-margin">Skills</h2>
+          </div>
+        </div>
         <div className="skills-body">
           {this.state.skillObjArray.map((item, index) => {
             return (
