@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Personal-Website-2.0/static/css/main.2b53e664.chunk.css",
+    "main.js": "/Personal-Website-2.0/static/js/main.1004a808.chunk.js",
+    "main.js.map": "/Personal-Website-2.0/static/js/main.1004a808.chunk.js.map",
+    "runtime-main.js": "/Personal-Website-2.0/static/js/runtime-main.b98eb85d.js",
+    "runtime-main.js.map": "/Personal-Website-2.0/static/js/runtime-main.b98eb85d.js.map",
+    "static/css/2.97ea2a57.chunk.css": "/Personal-Website-2.0/static/css/2.97ea2a57.chunk.css",
+    "static/js/2.5310afe1.chunk.js": "/Personal-Website-2.0/static/js/2.5310afe1.chunk.js",
+    "static/js/2.5310afe1.chunk.js.map": "/Personal-Website-2.0/static/js/2.5310afe1.chunk.js.map",
+    "index.html": "/Personal-Website-2.0/index.html",
+    "precache-manifest.745380f4f590c70308173ba93f872d66.js": "/Personal-Website-2.0/precache-manifest.745380f4f590c70308173ba93f872d66.js",
+    "service-worker.js": "/Personal-Website-2.0/service-worker.js",
+    "static/css/2.97ea2a57.chunk.css.map": "/Personal-Website-2.0/static/css/2.97ea2a57.chunk.css.map",
+    "static/css/main.2b53e664.chunk.css.map": "/Personal-Website-2.0/static/css/main.2b53e664.chunk.css.map",
+    "static/js/2.5310afe1.chunk.js.LICENSE.txt": "/Personal-Website-2.0/static/js/2.5310afe1.chunk.js.LICENSE.txt",
+    "static/media/Bensound - Hey.mp3": "/Personal-Website-2.0/static/media/Bensound - Hey.21f4f5d2.mp3",
+    "static/media/Bensound - Sunny.mp3": "/Personal-Website-2.0/static/media/Bensound - Sunny.15e0ab24.mp3",
+    "static/media/Castle of Glass - Linkin Park.mp3": "/Personal-Website-2.0/static/media/Castle of Glass - Linkin Park.c3fe3f45.mp3",
+    "static/media/DKWallpaper.jpg": "/Personal-Website-2.0/static/media/DKWallpaper.f8f0ff60.jpg",
+    "static/media/Famous for Nothing - Dropkick Murphys.mp3": "/Personal-Website-2.0/static/media/Famous for Nothing - Dropkick Murphys.5d30b1be.mp3",
+    "static/media/Guzma - Pokemon.mp3": "/Personal-Website-2.0/static/media/Guzma - Pokemon.27dd1934.mp3",
+    "static/media/Guzma - Pokemon.PNG": "/Personal-Website-2.0/static/media/Guzma - Pokemon.281a4fb2.PNG",
+    "static/media/Hamburger_icon.svg": "/Personal-Website-2.0/static/media/Hamburger_icon.86595150.svg",
+    "static/media/Logo.png": "/Personal-Website-2.0/static/media/Logo.e1139216.png",
+    "static/media/Pallet - Pokemon.PNG": "/Personal-Website-2.0/static/media/Pallet - Pokemon.66f75e5f.PNG",
+    "static/media/Pallet - Pokemon.mp3": "/Personal-Website-2.0/static/media/Pallet - Pokemon.ea1ca771.mp3",
+    "static/media/Zinnia - Pokemon.mp3": "/Personal-Website-2.0/static/media/Zinnia - Pokemon.8da7ae63.mp3",
+    "static/media/Zinnia - Pokemon.PNG": "/Personal-Website-2.0/static/media/Zinnia - Pokemon.facbbfd1.PNG",
+    "static/media/josephganning_resume.pdf": "/Personal-Website-2.0/static/media/josephganning_resume.17f56e8c.pdf",
+    "static/media/logo.svg": "/Personal-Website-2.0/static/media/logo.5d5d9eef.svg",
+    "static/media/shrek.PNG": "/Personal-Website-2.0/static/media/shrek.dc2853f6.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b98eb85d.js",
+    "static/css/2.97ea2a57.chunk.css",
+    "static/js/2.5310afe1.chunk.js",
+    "static/css/main.2b53e664.chunk.css",
+    "static/js/main.1004a808.chunk.js"
+  ]
+}
