@@ -282,6 +282,7 @@
     background-color: #33363b;
     color: #eaeaea;
     z-index: 1;
+    position: fixed;
   }
 
   /* .sidebar .logo {
