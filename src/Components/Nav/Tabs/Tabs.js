@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
-// import "./Tabs.css";
 
 export const Tabs = (props) => {
   console.log(props);
