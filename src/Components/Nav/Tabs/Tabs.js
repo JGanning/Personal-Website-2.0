@@ -49,13 +49,13 @@ export const Tabs = (props) => {
         <li className="tab">Resume</li>
       </NavLink>
 
-      <NavLink
+      {/* <NavLink
         to="/music-lounge"
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
         <li className="tab">Music Lounge</li>
-      </NavLink>
+      </NavLink> */}
 
       <NavLink
         to="/experiments"
