@@ -1,11 +1,18 @@
 import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export const Tabs = (props) => {
   console.log(props);
   return (
     <ul className={`${props.collapsed}`}>
       {/* <img className="logo" src={require("../../../assets/img/Logo.png")} alt="Profile Pic" /> */}
+      <li className="cancel tab">
+        <div onClick={() => props.returnToParent("collapsed")}>
+          <FontAwesomeIcon icon={faTimes} />
+        </div>
+      </li>
       <NavLink
         exact
         to="/"

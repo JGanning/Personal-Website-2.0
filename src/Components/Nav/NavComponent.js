@@ -22,7 +22,7 @@ class NavComponent extends Component {
     return (
       <div className="sidebar">
         <Icon collapsed={this.state.collapsed} returnToParent={this.collapseExpand} />
-        <Tabs collapsed={this.state.collapsed} />
+        <Tabs collapsed={this.state.collapsed} returnToParent={this.collapseExpand} />
         <div className="anchor">
           <Contact />
           <MediaLinks />
