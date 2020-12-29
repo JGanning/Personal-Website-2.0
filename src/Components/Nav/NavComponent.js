@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "./NavComponent.css";
-
 import Icon from "./Icon/Icon";
 import Tabs from "./Tabs/Tabs";
 import Contact from "./Contact/Contact";
