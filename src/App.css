@@ -220,7 +220,7 @@
   border: solid #368cbf;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .sidebar {
     height: 100vh;
     margin: 0px;

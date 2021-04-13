@@ -63,13 +63,13 @@ export const Tabs = (props) => {
         <li className="tab">Music Lounge</li>
       </NavLink> */}
 
-      <NavLink
+      {/* <NavLink
         to="/experiments"
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >
         <li className="tab">Experiments</li>
-      </NavLink>
+      </NavLink> */}
     </ul>
   );
 };

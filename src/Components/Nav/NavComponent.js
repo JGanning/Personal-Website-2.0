@@ -5,10 +5,10 @@ import Contact from "./Contact/Contact";
 import MediaLinks from "./MediaLinks/MediaLinks";
 
 function NavComponent(props) {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState("collapsed");
 
   const collapseExpand = (value) => {
-    setCollapsed(!collapsed);
+    setCollapsed(value);
   };
 
   return (
