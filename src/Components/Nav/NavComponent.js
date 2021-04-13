@@ -1,35 +1,26 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Icon from "./Icon/Icon";
 import Tabs from "./Tabs/Tabs";
 import Contact from "./Contact/Contact";
 import MediaLinks from "./MediaLinks/MediaLinks";
 
-class NavComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      collapsed: "collapsed",
-    };
-  }
+function NavComponent(props) {
+  const [collapsed, setCollapsed] = useState(false);
 
-  collapseExpand = (value) => {
-    this.setState({
-      collapsed: value,
-    });
+  const collapseExpand = (value) => {
+    setCollapsed(!collapsed);
   };
 
-  render() {
-    return (
-      <div className="sidebar">
-        <Icon collapsed={this.state.collapsed} returnToParent={this.collapseExpand} />
-        <Tabs collapsed={this.state.collapsed} returnToParent={this.collapseExpand} />
-        <div className="anchor">
-          <Contact />
-          <MediaLinks />
-        </div>
+  return (
+    <div className="sidebar">
+      <Icon collapsed={collapsed} returnToParent={collapseExpand} />
+      <Tabs collapsed={collapsed} returnToParent={collapseExpand} />
+      <div className="anchor">
+        <Contact />
+        <MediaLinks />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default NavComponent;
