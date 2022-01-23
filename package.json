@@ -29,9 +29,11 @@
     "hosted-git-info": "^4.1.0",
     "jquery": "^3.5.1",
     "json-schema": "^0.4.0",
+    "lodash": "^4.17.21",
     "merge-deep": "^3.0.3",
     "nanoid": "^3.2.0",
     "nth-check": "^2.0.1",
+    "object-path": "^0.11.8",
     "path-parse": "^1.0.7",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.5",
@@ -53,7 +55,7 @@
     "ssri": "^8.0.1",
     "svg-inline-loader": "^0.8.2",
     "tmpl": "^1.0.5",
-    "underscore": "^1.10.2",
+    "underscore": "^1.13.2",
     "ws": "^8.4.2"
   },
   "scripts": {
