@@ -1,6 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import josephganning_resume from "../../assets/img/josephganning_resume.pdf";
-import "./Resume.css";
 import { Document, Page, pdfjs } from "react-pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -18,8 +17,12 @@ function Resume() {
     <div className="resume col-lg-9 no-padding">
       <h2 className="header no-margin">Resume</h2>
       <div className="download">
-        <a className="dl-button" href="../../assets/img/josephganning_resume.pdf" download>
-        <FontAwesomeIcon className="dl-icon" icon={faDownload} />
+        <a
+          className="dl-button"
+          href="../../assets/img/josephganning_resume.pdf"
+          download
+        >
+          <FontAwesomeIcon className="dl-icon" icon={faDownload} />
           Download Resume
         </a>
       </div>

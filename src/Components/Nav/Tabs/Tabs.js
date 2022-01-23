@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export const Tabs = (props) => {
-  console.log(props);
   return (
     <ul className={`${props.collapsed}`}>
       {/* <img className="logo" src={require("../../../assets/img/Logo.png")} alt="Profile Pic" /> */}

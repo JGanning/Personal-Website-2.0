@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import * as Constants from "./About-Constants";
-// import * from "../../assets/img";
 
 function About(props) {
   return (

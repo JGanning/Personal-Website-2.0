@@ -1,15 +1,15 @@
 import React from "react";
-import './Contact.css';
+import * as cont from "./Constants";
 
 export const Contact = () => {
   return (
-  <div className="contact">
-    <h4>Contact</h4>
-    <ul>
-      <li>Phone: 973-647-5093</li>
-      <li>Email: joseph.ganning@gmail.com</li>
-    </ul>
-  </div>
+    <div className="contact">
+      <h4>Contact</h4>
+      <ul>
+        <li>Phone: {cont.PHONE_NUMBER}</li>
+        <li>Email: {cont.EMAIL}</li>
+      </ul>
+    </div>
   );
 };
 

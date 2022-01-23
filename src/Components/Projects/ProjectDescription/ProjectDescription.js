@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProjectDescription = (props) => {
   return (
-    <div className="project-description col-lg-9 no-padding container">
+    <div className="project-list">
       <p className={props.projectContent}>{props.description}</p>
     </div>
   );

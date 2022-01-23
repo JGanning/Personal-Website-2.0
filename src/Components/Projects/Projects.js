@@ -1,11 +1,9 @@
-import React, { Component, useState, useEffect } from "react";
-import { bindActionCreators } from "redux";
-import { connect, useDispatch, useSelector } from "react-redux";
-import "./Projects.css";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectName from "./ProjectName/ProjectName";
 import * as projectActions from "./Project_State_MGMT/Project-ActionCreator";
-import axios from "axios";
+import _ from "lodash";
 
 function Projects(props) {
   const { getProjects } = useSelector((state) => ({
@@ -36,19 +34,7 @@ function Projects(props) {
     {
       name: "Music Player Extension",
       image: "",
-      description: "Javascript Chrome extension to play music",
-      link: "",
-    },
-    {
-      name: "Magic 8 Ball",
-      image: "",
-      description: "First small project on Android in Java",
-      link: "",
-    },
-    {
-      name: "Magic 8 Ball",
-      image: "",
-      description: "First small project on Android in Java",
+      description: "Javascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play music",
       link: "",
     },
     {
@@ -62,10 +48,11 @@ function Projects(props) {
 
   useEffect(() => {
     dispatch(projectActions.getProjects());
-  }, []);
+  });
 
   useEffect(() => {
-    if (getProjects) {
+    //Demonstrate use of reducer data
+    if (!_.isEmpty(getProjects)) {
       setProjects(getProjects);
     }
   }, [getProjects]);
@@ -78,29 +65,22 @@ function Projects(props) {
         </div>
       </div>
       <div className="projects-body">
-        {projects
-          ? projects.map((item, index) => {
-              return (
-                <div key={index} className="project row no-margin">
+        {projects &&
+          projects.map((item, index) => {
+            return (
+              <div key={index} className="project row no-margin">
+                <div className="col-lg-3 no-padding">
                   <ProjectName name={item.name} />
-                  <ProjectDescription
-                    projectContent="db-project-content"
-                    description={item.description}
-                  />
                 </div>
-              );
-            })
-          : this.state.projectsArray.map((item, index) => {
-              return (
-                <div key={index} className="project row no-margin">
-                  <ProjectName name={item.name} />
+                <div className="project-description col-lg-9 no-padding">
                   <ProjectDescription
                     projectContent="project-content"
                     description={item.description}
                   />
                 </div>
-              );
-            })}
+              </div>
+            );
+          })}
       </div>
     </div>
   );

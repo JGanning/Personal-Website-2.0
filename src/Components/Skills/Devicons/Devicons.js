@@ -5,7 +5,7 @@ export const Devicons = (props) => {
     <div className="devicons-list">
       <div>{props.devicon}</div>
     </div>
-  )
+  );
 };
 
 export default Devicons;
