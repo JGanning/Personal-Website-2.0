@@ -7,11 +7,11 @@ export const Tabs = (props) => {
   return (
     <ul className={`${props.collapsed}`}>
       {/* <img className="logo" src={require("../../../assets/img/Logo.png")} alt="Profile Pic" /> */}
-      <li className="cancel tab">
+      {/* <li className="cancel tab">
         <div onClick={() => props.returnToParent("collapsed")}>
           <FontAwesomeIcon icon={faTimes} />
         </div>
-      </li>
+      </li> */}
       <NavLink
         exact
         to="/"

@@ -2,12 +2,12 @@ import React from "react";
 
 export const skillObjArray = [
   {
-    text: "Worked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building AnguWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Appslar AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Apps",
-    icon: <i className="devicon-angularjs-plain"></i>,
-  },
-  {
     text: "Working at Wells Fargo building React Apps",
     icon: <i className="devicon-react-original-wordmark"></i>,
+  },
+  {
+    text: "Worked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building AnguWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Appslar AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Apps",
+    icon: <i className="devicon-angularjs-plain"></i>,
   },
   {
     text: "Use Javascript in frontend dev work",
