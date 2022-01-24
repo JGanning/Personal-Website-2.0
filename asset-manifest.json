@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.b79195bd.chunk.css",
-    "main.js": "/static/js/main.496954f4.chunk.js",
-    "main.js.map": "/static/js/main.496954f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
-    "static/css/2.97ea2a57.chunk.css": "/static/css/2.97ea2a57.chunk.css",
-    "static/js/2.4ff17a6f.chunk.js": "/static/js/2.4ff17a6f.chunk.js",
-    "static/js/2.4ff17a6f.chunk.js.map": "/static/js/2.4ff17a6f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1f88c5f61be65b04fc986e7aab72cd5e.js": "/precache-manifest.1f88c5f61be65b04fc986e7aab72cd5e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.97ea2a57.chunk.css.map": "/static/css/2.97ea2a57.chunk.css.map",
-    "static/css/main.b79195bd.chunk.css.map": "/static/css/main.b79195bd.chunk.css.map",
-    "static/js/2.4ff17a6f.chunk.js.LICENSE.txt": "/static/js/2.4ff17a6f.chunk.js.LICENSE.txt",
-    "static/media/Hamburger_icon.svg": "/static/media/Hamburger_icon.86595150.svg",
-    "static/media/Logo.png": "/static/media/Logo.e1139216.png",
-    "static/media/josephganning_resume.pdf": "/static/media/josephganning_resume.17f56e8c.pdf",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-    "static/media/shrek.PNG": "/static/media/shrek.dc2853f6.PNG"
+    "main.css": "/Personal-Website-2.0/static/css/main.b79195bd.chunk.css",
+    "main.js": "/Personal-Website-2.0/static/js/main.25fa8e9b.chunk.js",
+    "main.js.map": "/Personal-Website-2.0/static/js/main.25fa8e9b.chunk.js.map",
+    "runtime-main.js": "/Personal-Website-2.0/static/js/runtime-main.b98eb85d.js",
+    "runtime-main.js.map": "/Personal-Website-2.0/static/js/runtime-main.b98eb85d.js.map",
+    "static/css/2.97ea2a57.chunk.css": "/Personal-Website-2.0/static/css/2.97ea2a57.chunk.css",
+    "static/js/2.3f06770e.chunk.js": "/Personal-Website-2.0/static/js/2.3f06770e.chunk.js",
+    "static/js/2.3f06770e.chunk.js.map": "/Personal-Website-2.0/static/js/2.3f06770e.chunk.js.map",
+    "index.html": "/Personal-Website-2.0/index.html",
+    "precache-manifest.ef0ed7faa50589ee667b2572a177f2f7.js": "/Personal-Website-2.0/precache-manifest.ef0ed7faa50589ee667b2572a177f2f7.js",
+    "service-worker.js": "/Personal-Website-2.0/service-worker.js",
+    "static/css/2.97ea2a57.chunk.css.map": "/Personal-Website-2.0/static/css/2.97ea2a57.chunk.css.map",
+    "static/css/main.b79195bd.chunk.css.map": "/Personal-Website-2.0/static/css/main.b79195bd.chunk.css.map",
+    "static/js/2.3f06770e.chunk.js.LICENSE.txt": "/Personal-Website-2.0/static/js/2.3f06770e.chunk.js.LICENSE.txt",
+    "static/media/Hamburger_icon.svg": "/Personal-Website-2.0/static/media/Hamburger_icon.86595150.svg",
+    "static/media/Logo.png": "/Personal-Website-2.0/static/media/Logo.e1139216.png",
+    "static/media/josephganning_resume.pdf": "/Personal-Website-2.0/static/media/josephganning_resume.17f56e8c.pdf",
+    "static/media/logo.svg": "/Personal-Website-2.0/static/media/logo.5d5d9eef.svg",
+    "static/media/shrek.PNG": "/Personal-Website-2.0/static/media/shrek.dc2853f6.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce89729d.js",
+    "static/js/runtime-main.b98eb85d.js",
     "static/css/2.97ea2a57.chunk.css",
-    "static/js/2.4ff17a6f.chunk.js",
+    "static/js/2.3f06770e.chunk.js",
     "static/css/main.b79195bd.chunk.css",
-    "static/js/main.496954f4.chunk.js"
+    "static/js/main.25fa8e9b.chunk.js"
   ]
 }
