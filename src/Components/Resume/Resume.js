@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import josephganning_resume from "../../assets/img/josephganning_resume.pdf";
+import ganning_joseph_resume_2023 from "../../assets/img/ganning_joseph_resume_2023.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -19,8 +19,8 @@ function Resume() {
       <div className="download">
         <a
           className="dl-button"
-          href="../../assets/img/josephganning_resume.pdf"
-          download
+          href={ganning_joseph_resume_2023}
+          download="ganning_joseph_resume_2023.pdf"
         >
           <FontAwesomeIcon className="dl-icon" icon={faDownload} />
           Download Resume
@@ -29,7 +29,7 @@ function Resume() {
 
       <div className="doc-body">
         <Document
-          file={josephganning_resume}
+          file={ganning_joseph_resume_2023}
           onDocumentLoadSuccess={onDocumentLoadSuccess}
           className="resume-pdf"
         >
