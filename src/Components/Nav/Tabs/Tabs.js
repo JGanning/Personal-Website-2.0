@@ -20,7 +20,6 @@ export const Tabs = (props) => {
       >
         <li className="tab">Home</li>
       </NavLink>
-
       <NavLink
         exact
         to="/bio"
@@ -29,7 +28,6 @@ export const Tabs = (props) => {
       >
         <li className="tab">Bio</li>
       </NavLink>
-
       <NavLink
         to="/projects"
         className="sidebar__Link list-padding"
@@ -37,7 +35,6 @@ export const Tabs = (props) => {
       >
         <li className="tab">Projects</li>
       </NavLink>
-
       <NavLink
         to="/skills"
         className="sidebar__Link list-padding"
@@ -45,7 +42,6 @@ export const Tabs = (props) => {
       >
         <li className="tab">Skills</li>
       </NavLink>
-
       <NavLink
         to="/resume"
         className="sidebar__Link list-padding"
@@ -53,22 +49,6 @@ export const Tabs = (props) => {
       >
         <li className="tab">Resume</li>
       </NavLink>
-
-      {/* <NavLink
-        to="/music-lounge"
-        className="sidebar__Link list-padding"
-        activeClassName="sidebar__Link--active"
-      >
-        <li className="tab">Music Lounge</li>
-      </NavLink> */}
-
-      {/* <NavLink
-        to="/experiments"
-        className="sidebar__Link list-padding"
-        activeClassName="sidebar__Link--active"
-      >
-        <li className="tab">Experiments</li>
-      </NavLink> */}
     </ul>
   );
 };
