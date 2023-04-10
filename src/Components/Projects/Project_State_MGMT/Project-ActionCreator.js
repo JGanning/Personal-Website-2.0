@@ -10,7 +10,6 @@ function updateComponentState(actionType, data) {
 }
 
 export function getProjects() {
-  console.log("getting projects");
   const url = `http://localhost:8084/api/getProjects`;
   return (dispatch) => {
     return axios

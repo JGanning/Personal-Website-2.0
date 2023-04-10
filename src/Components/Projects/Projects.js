@@ -5,7 +5,7 @@ import ProjectName from "./ProjectName/ProjectName";
 import * as projectActions from "./Project_State_MGMT/Project-ActionCreator";
 import _ from "lodash";
 
-function Projects(props) {
+function Projects() {
   const { getProjects } = useSelector((state) => ({
     getProjects: state.projectReducer.getProjects,
   }));
@@ -16,31 +16,31 @@ function Projects(props) {
     {
       name: "JGanning Backend",
       image: "",
-      description: "Java code for this website",
-      link: "",
-    },
-    {
-      name: "Kois R Us",
-      image: "",
-      description: "School Project in PHP",
-      link: "",
+      description: "Demonstration of how I would implement Java to expand this site's functionality",
+      link: "https://github.com/JGanning/Personal-Website-Backend",
     },
     {
       name: "Bot Jingleheimer",
       image: "",
-      description: "Chat Bot in Python",
-      link: "",
+      description: "Chat Bot in Python to communicate with viewers of a live-streamed charity event",
+      link: "https://github.com/JGanning/Bot_Jingleheimer",
     },
     {
       name: "Music Player Extension",
       image: "",
-      description: "Javascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play musicJavascript Chrome extension to play music",
-      link: "",
+      description: "Javascript Chrome extension to play music from a local storage location",
+      link: "https://github.com/JGanning/Indie-Music-Extension",
+    },
+    {
+      name: "Kois R Us",
+      image: "",
+      description: "Sample E-Commerce website using PHP",
+      link: "https://github.com/JGanning/KoisRUs",
     },
     {
       name: "Magic 8 Ball",
       image: "",
-      description: "First small project on Android in Java",
+      description: "My first functional Android Application that simulates the functionality of a Magic 8 Ball",
       link: "",
     },
   ];
@@ -70,7 +70,7 @@ function Projects(props) {
             return (
               <div key={index} className="project row no-margin">
                 <div className="col-lg-3 no-padding">
-                  <ProjectName name={item.name} />
+                  <ProjectName link={item.link} name={item.name} />
                 </div>
                 <div className="project-description col-lg-9 no-padding">
                   <ProjectDescription

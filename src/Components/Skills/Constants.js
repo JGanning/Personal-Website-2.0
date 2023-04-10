@@ -2,47 +2,47 @@ import React from "react";
 
 export const skillObjArray = [
   {
-    text: "Working at Wells Fargo building React Apps",
+    text: "Use React to build interactive UI and write reusable component based code",
     icon: <i className="devicon-react-original-wordmark"></i>,
   },
   {
-    text: "Worked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building AnguWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Appslar AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular AppsWorked at GE building Angular Apps",
+    text: "Use Angular framework as an option to build a structured front-end application",
     icon: <i className="devicon-angularjs-plain"></i>,
   },
   {
-    text: "Use Javascript in frontend dev work",
+    text: "Use Javascript to dynamically update the front-end of applications",
     icon: <i className="devicon-javascript-plain"></i>,
   },
   {
-    text: "Use HTML in frontend dev work",
+    text: "Use HTML to structure webpages",
     icon: <i className="devicon-html5-plain-wordmark"></i>,
   },
   {
-    text: "Use CSS in frontend dev work",
+    text: "Use CSS to style webpages",
     icon: <i className="devicon-css3-plain-wordmark"></i>,
   },
   {
-    text: "Use Java for service programming at GE and Wells Fargo",
+    text: "Use Java Spring to develop back-end services",
     icon: <i className="devicon-java-plain-wordmark"></i>,
   },
   {
-    text: "Used NodeJS for Service programming at GE",
+    text: "Consistently work with NodeJS to give front-end applications network capabilities",
     icon: <i className="devicon-nodejs-plain-wordmark"></i>,
   },
   {
-    text: "Postgres DB at GE",
+    text: "Postgres DB as an open source option for personal projects",
     icon: <i className="devicon-postgresql-plain-wordmark"></i>,
   },
   {
-    text: "Oracle DB at GE",
+    text: "Used Oracle DB to manage large amounts of data",
     icon: <i className="devicon-oracle-original"></i>,
   },
   {
-    text: "MySQL at Montclair",
+    text: "Used MySql to build a sample E-Commerce website",
     icon: <i className="devicon-mysql-plain-wordmark"></i>,
   },
   {
-    text: "Use Git as Source Control for every project",
+    text: "Use Git as Source Control for projects",
     icon: <i className="devicon-git-plain"></i>,
   },
   {

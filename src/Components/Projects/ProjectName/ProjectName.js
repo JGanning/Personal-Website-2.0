@@ -1,7 +1,20 @@
 import React from "react";
 
 export const ProjectName = (props) => {
-  return <span className="project-name">{props.name}</span>;
+  function linkRedirect(url) {
+    if(url) {
+      window.open(url, '_blank');
+      return null;
+    }
+  }
+
+  return (
+    <span
+      className="project-name"
+      onClick={() => linkRedirect(props.link)}>
+        {props.name}
+      </span>
+    );
 };
 
 export default ProjectName;
