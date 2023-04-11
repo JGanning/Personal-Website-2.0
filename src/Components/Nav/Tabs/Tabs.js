@@ -12,17 +12,17 @@ export const Tabs = (props) => {
           <FontAwesomeIcon icon={faTimes} />
         </div>
       </li> */}
-      <NavLink
+      {/* <NavLink
         exact
         to="/"
         activeClassName="sidebar__Link--active"
         className="sidebar__Link list-padding"
       >
         <li className="tab">Home</li>
-      </NavLink>
+      </NavLink> */}
       <NavLink
         exact
-        to="/bio"
+        to="/"
         className="sidebar__Link list-padding"
         activeClassName="sidebar__Link--active"
       >

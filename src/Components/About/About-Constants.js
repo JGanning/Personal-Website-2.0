@@ -5,4 +5,4 @@ export const p2 =
   "I am a graduate of Montclair State University, where I majored in computer science. During college, I pursued software development because I enjoy problem solving and critical thinking. I believe that this field is full of the possibilities for technological innovation, as well as development of individual and collective ideas.";
 
 export const p3 =
-  "I grew up in Morristown, New Jersey. In my free time I like to solve Sudoku puzzles, play Chess, listen to music with a lousy attempt and creating some of my own.";
+  "I grew up in Morristown, New Jersey. In my free time I like to solve Sudoku puzzles, play Chess, listen to music with a lousy attempt and creating some of my own. I also enjoy spending quality time with my friends and taking my puppy to parks for some exploration.";
